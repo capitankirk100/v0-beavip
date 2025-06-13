@@ -1,0 +1,115 @@
+import type { ServiceType } from "../types"
+import {
+  Users,
+  Heart,
+  Eye,
+  MessageCircle,
+  Phone,
+  Share2,
+  Play,
+  Globe,
+  Twitch,
+  Youtube,
+  ShoppingCart,
+  Key,
+  Package,
+} from "lucide-react"
+
+export const serviceTypes: ServiceType[] = [
+  {
+    id: "packages",
+    name: "Pacchetti & Abbonamenti",
+    icon: <Package className="h-6 w-6" />,
+    description: "Risparmia con i nostri pacchetti combinati e abbonamenti mensili",
+  },
+  {
+    id: "followers",
+    name: "Followers",
+    icon: <Users className="h-6 w-6" />,
+    description: "Aumenta i tuoi followers e fai crescere il tuo account",
+  },
+  {
+    id: "likes",
+    name: "Likes",
+    icon: <Heart className="h-6 w-6" />,
+    description: "Ottieni più likes sui tuoi post e aumenta l'engagement",
+  },
+  {
+    id: "views",
+    name: "Visualizzazioni",
+    icon: <Eye className="h-6 w-6" />,
+    description: "Aumenta le visualizzazioni dei tuoi reels e video per maggiore coinvolgimento",
+  },
+  {
+    id: "comments",
+    name: "Commenti",
+    icon: <MessageCircle className="h-6 w-6" />,
+    description: "Ricevi commenti positivi sui tuoi contenuti",
+  },
+  {
+    id: "telegram",
+    name: "Numeri Telegram",
+    icon: <Phone className="h-6 w-6" />,
+    description: "Noleggia o acquista numeri Telegram verificati",
+  },
+  {
+    id: "whatsapp",
+    name: "Numeri WhatsApp",
+    icon: <Phone className="h-6 w-6" />,
+    description: "Noleggia o acquista numeri WhatsApp verificati",
+  },
+  {
+    id: "telegramShop",
+    name: "Negozio Telegram",
+    icon: <ShoppingCart className="h-6 w-6" />,
+    description: "Crea o acquista un negozio su Telegram per vendere i tuoi prodotti",
+  },
+  {
+    id: "telegramMembers",
+    name: "Membri Telegram",
+    icon: <Users className="h-6 w-6" />,
+    description: "Aumenta i membri del tuo canale o gruppo Telegram",
+  },
+  {
+    id: "telegramViews",
+    name: "Visualizzazioni Telegram",
+    icon: <Eye className="h-6 w-6" />,
+    description: "Aumenta le visualizzazioni dei tuoi post su Telegram",
+  },
+  {
+    id: "shares",
+    name: "Condivisioni",
+    icon: <Share2 className="h-6 w-6" />,
+    description: "Ottieni più condivisioni sui tuoi post per TikTok",
+  },
+  {
+    id: "liveStream",
+    name: "Live Stream",
+    icon: <Play className="h-6 w-6" />,
+    description: "Aumenta gli spettatori dei tuoi live streaming",
+  },
+  {
+    id: "websiteVisits",
+    name: "Visite al Sito Web",
+    icon: <Globe className="h-6 w-6" />,
+    description: "Aumenta il traffico sul tuo sito web da varie piattaforme",
+  },
+  {
+    id: "twitchServices",
+    name: "Servizi Twitch",
+    icon: <Twitch className="h-6 w-6" />,
+    description: "Aumenta followers e visualizzazioni su Twitch",
+  },
+  {
+    id: "youtubeServices",
+    name: "Servizi YouTube",
+    icon: <Youtube className="h-6 w-6" />,
+    description: "Aumenta visualizzazioni, likes, commenti e iscritti su YouTube",
+  },
+  {
+    id: "licenses",
+    name: "Licenze Software",
+    icon: <Key className="h-6 w-6" />,
+    description: "Acquista licenze originali per Windows e Office a prezzi vantaggiosi",
+  },
+]
